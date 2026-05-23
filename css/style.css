@@ -1,0 +1,98 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.Chat-box{
+    background-color:#ededed;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+   box-shadow: 10px 10px 5px #ababab;
+}
+
+.Chat-box .chatbox-title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #cfd1d1;
+    margin: 0 0 10px 0;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+}
+
+.chatbox-title p{
+    font-weight: bolder;
+    color: #da3b3b;
+}
+
+.Chat-box .chatbox-content{
+    flex: 10;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.Chat-box .chatbox-text{
+    flex: 1;
+    display: flex;
+    padding: 5px;
+    margin: 0;
+    background-color: #cfd1d1;
+    border-radius: 0 0 10px 10px;
+}
+
+.chatbox-label{
+    min-width: 50px;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin: 5px;
+    flex-direction: column;
+}
+.chatbox-label p{
+    margin: 0;
+    font-size: 0.7em;
+}
+
+.chatbox-label .message-time{
+    font-size: 0.5em;
+    color: #888888;
+    margin: 0 5px 0 0;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 2px 5px;
+}
+#message-input{
+    width: 90%;
+     padding: 5px;
+     border: none;
+}
+#message-input:focus{
+    outline: none;
+    border: none;
+}
+#file-input{
+    display: none;
+}
+
+.message{
+    padding: 0;
+}
+.btn{
+    flex: 1;
+    padding: 0;
+ }

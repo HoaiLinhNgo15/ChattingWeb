@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>My Box Chat</title>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="StyleSheet">
+        <script src="js/lib.js"></script>
+    </head>
+    <body> 
+        <div class="Chat-box">
+            <div class="chatbox-title"> 
+                <p>Chatting</p>
+            </div>
+
+             <div class="chatbox-content">
+                
+            </div>
+
+            <div class="chatbox-text">
+                <div class="message">
+                    <input type="text" id="message-input" name="message-input" placeholder="Enter your messages">
+                </div>
+                <div>
+                    <input type="file" id="file-input" name="file-input">
+                     <label for="file-input" class="file-icon">
+                        <img class="icon" src="assets/image/OIP.webp" alt="Upload file"><!-- hoặc dùng icon từ Font Awesome -->
+                    </label>
+                </div>
+               <div class="btn">
+                    <input type="button" id="btn-send" onclick="getMessage()" value="Send">
+               </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById("message-input").addEventListener("keypress", function(event){
+                if(event.key === "Enter"){
+                    event.preventDefault();
+                    getMessage();
+                }
+            });
+        </script>
+    </body>
+</html>
